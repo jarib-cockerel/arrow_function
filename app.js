@@ -48,3 +48,45 @@ const double = (arr) => arr.map(val => val * 2);
 */
 
 const double = (arr) => arr.map((val) => val * 2);
+
+/*
+
+Refactor all functions with arrow functions:
+
+function squareAndFindEvens(number) {
+    var squares = number.map(function(num){
+        return num ** 2;
+    });
+    var evens = squares.filter(function(square){
+        return square % 2 === 0;
+    });
+    return evens;
+}
+
+
+these are function expressions which are ideal for arrow functions 
+
+we need to replace function and return for arrow function short hand
+
+function squareAndFindEvens(numbers){} can be changed to below:
+
+const squareAndFindEvens = numbers => {}
+
+var squares = number.map(function(num){return num ** 2}) can be changed to below:
+
+ let squares = number.map ((num) => num ** 2)
+
+var evens = squares.filter(functio(square) {return square % 2 === 0}) can be change to below:
+
+let evens = squares.filter((square) => % 2 === 0))
+
+
+*/
+
+// const squareAndFindEvens = numbers => {
+//     var squares = numbers.map((num) => num ** 2)
+
+//     var evens = squares.filter((square) => 2 % === 0);
+
+//     => evens
+// };
